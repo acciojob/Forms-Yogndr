@@ -3,12 +3,10 @@ import Form from './Form'
 import FormRef from './FormRef'
 import FormState from './FormState'
 
-const Card = () => {
+const Card = ({children}) => {
   return (
     <div>
-        <Form/>
-        <FormRef/>
-        <FormState/>
+       {children}
     </div>
   )
 }

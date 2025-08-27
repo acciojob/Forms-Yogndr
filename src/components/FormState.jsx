@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Card from './Card';
 
 const FormState = () => {
 
@@ -7,27 +8,42 @@ const FormState = () => {
     const[password,setPassword]=useState("");
     const[confirm,setConfirm]=useState("");
   return (
-    <div>
+   
+   //Card => {childern} => div {childer} /div
+   <Card>
     <form id="info-form">
-    <input type="text" id="full_name" onChange={(e)=>{
+        <div>
+        <label htmlFor='full_name'>Full Name</label>
+    <input type="text" id="full_name" value={name} onChange={(e)=>{
         setName(e.target.value);
     }}/>
-    <input type="email" id="email" onChange={(e)=>{
+    </div>
+    <div>
+    <label htmlFor='email'>Email</label>
+    <input type="email" id="email" value={email} onChange={(e)=>{
         setEmail(e.target.value)
     }}/>
-    <input type="password" id="password" onChange={(e)=>{
+    </div>
+    <div>
+    <label htmlFor='password'>Password</label>
+    <input type="password" id="password" value={password} onChange={(e)=>{
         setPassword(e.target.value)
     }}/>
-    <input type="password" id="password_confirmation" onChange={(e)=>{
+    </div>
+    <div>
+    <label htmlFor='password_confirmation'>Confirm Password</label>
+    <input type="password" id="password_confirmation" value={confirm} onChange={(e)=>{
         setConfirm(e.target.value);
     }}/>
+    </div>
     <button type="submit" onClick={(e)=>{
         e.preventDefault();
         console.log({name})
     }}>Submit</button>
 
    </form>
-    </div>
+   </Card>
+   
   )
 }
 
