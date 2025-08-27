@@ -11,7 +11,11 @@ const FormState = () => {
    
    //Card => {childern} => div {childer} /div
    <Card>
-    <form id="info-form">
+    <form id="info-form" onClick={(e)=>{
+        e.preventDefault();
+        console.log({name,email,password,confirm});
+        alert("its running");
+    }}>
         <div>
         <label htmlFor='full_name'>Full Name</label>
     <input type="text" id="full_name" value={name} onChange={(e)=>{
@@ -36,10 +40,7 @@ const FormState = () => {
         setConfirm(e.target.value);
     }}/>
     </div>
-    <button type="submit" onClick={(e)=>{
-        e.preventDefault();
-        console.log({name})
-    }}>Submit</button>
+    <button type="submit" >Submit</button>
 
    </form>
    </Card>

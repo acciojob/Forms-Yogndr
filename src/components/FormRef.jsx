@@ -10,7 +10,14 @@ const FormRef = () => {
   return (
     //label
     <Card>
-    <form id="info-form">
+    <form id="info-form" onSubmit={(e)=>{
+        e.preventDefault();
+        console.log(nameref.current.value);
+        console.log(mailref.current.value);
+        console.log(passwordref.current.value);
+        console.log(confirmref.current.value);
+        alert("Running");
+    }}>
         <div>
     <label htmlFor='full_name'>Full Name</label>
     <input type="text" id="full_name" ref={nameref}/>
@@ -27,10 +34,7 @@ const FormRef = () => {
     <label htmlFor='password_confirmation'>Confirm Password</label>
     <input type="password" id="password_confirmation" ref={confirmref}/>
     </div>
-    <button type="submit" onClick={(e)=>{
-        e.preventDefault();
-        // console.log(nameref.current.value);
-    }}>Submit</button>
+    <button type="submit" >Submit</button>
 
    </form>
     </Card> 
