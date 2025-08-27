@@ -4,7 +4,7 @@ import Card from './Card'
 const Form = () => {
   return (
     
-    <Card>
+    // <Card>
    <form id="info-form">
     <label htmlFor='full_name'>Full Name</label>
     <input type="text" id="full_name"/>
@@ -16,7 +16,7 @@ const Form = () => {
     <input type="password" id="password_confirmation"/>
     <button type="submit">Submit</button>
    </form>
-   </Card>
+//    </Card>
   )
 }
 

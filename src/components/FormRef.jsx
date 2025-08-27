@@ -8,7 +8,7 @@ const FormRef = () => {
 
   return (
     //label
-    <Card>
+    // <Card>
     <form id="info-form">
     <label htmlFor='full_name'>Full Name</label>
     <input type="text" id="full_name" ref={nameref}/>
@@ -24,7 +24,7 @@ const FormRef = () => {
     }}>Submit</button>
 
    </form>
-   </Card>
+   {/* </Card> */}
    
   )
 }
