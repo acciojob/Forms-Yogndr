@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom'
 import FormRef from './FormRef'
 import FormState from './FormState'
 import Form from './Form'
@@ -15,9 +15,9 @@ const App = () => {
     </ul>
     </nav>
        <Switch>
-        <Route path="/form" component={<Form/>}/> 
-        <Route path="/form-ref" component={<FormRef/>}/>
-        <Route path="/form-state" component={<FormState/>}/>
+       <Route path="/form" component={Form}/> 
+        <Route path="/form-ref" component={FormRef}/>
+        <Route path="/form-state" component={FormState}/>
        </Switch>
 
     

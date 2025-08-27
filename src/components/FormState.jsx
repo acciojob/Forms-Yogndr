@@ -10,7 +10,7 @@ const FormState = () => {
   return (
    
    //Card => {childern} => div {childer} /div
-//    <Card>
+   <Card>
     <form id="info-form">
         <div>
         <label htmlFor='full_name'>Full Name</label>
@@ -42,7 +42,7 @@ const FormState = () => {
     }}>Submit</button>
 
    </form>
-//    </Card>
+   </Card>
    
   )
 }

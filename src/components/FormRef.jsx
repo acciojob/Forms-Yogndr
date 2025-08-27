@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import Card from './Card';
 
 const FormRef = () => {
     const nameref=useRef();
@@ -8,7 +9,7 @@ const FormRef = () => {
 
   return (
     //label
-    // <Card>
+    <Card>
     <form id="info-form">
         <div>
     <label htmlFor='full_name'>Full Name</label>
@@ -32,7 +33,7 @@ const FormRef = () => {
     }}>Submit</button>
 
    </form>
-   /* </Card> */
+    </Card> 
    
   )
 }

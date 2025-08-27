@@ -3,8 +3,8 @@ import Card from './Card'
 
 const Form = () => {
   return (
-    
-    // <Card>
+   
+    <Card>
    <form id="info-form">
     <div>
     <label htmlFor='full_name'>Full Name</label>
@@ -24,7 +24,7 @@ const Form = () => {
     </div>
     <button type="submit">Submit</button>
    </form>
-//    </Card>
+   </Card>
   )
 }
 
