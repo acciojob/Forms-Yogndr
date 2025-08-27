@@ -15,7 +15,7 @@ const FormRef = () => {
     <input type="password" id="password_confirmation" ref={confirmref}/>
     <button type="button" onClick={(e)=>{
         e.preventDefault();
-        console.log(nameref.current.value);
+        // console.log(nameref.current.value);
     }}>Submit</button>
 
    </form>
