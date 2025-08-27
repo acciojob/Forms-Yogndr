@@ -21,7 +21,7 @@ const FormState = () => {
     <input type="password" id="password_confirmation" onChange={(e)=>{
         setConfirm(e.target.value);
     }}/>
-    <button type="button" onClick={(e)=>{
+    <button type="submit" onClick={(e)=>{
         e.preventDefault();
         console.log({name})
     }}>Submit</button>

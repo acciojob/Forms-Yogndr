@@ -13,7 +13,7 @@ const FormRef = () => {
     <input type="email" id="email" ref={mailref}/>
     <input type="password" id="password" ref={passwordref}/>
     <input type="password" id="password_confirmation" ref={confirmref}/>
-    <button type="button" onClick={(e)=>{
+    <button type="submit" onClick={(e)=>{
         e.preventDefault();
         // console.log(nameref.current.value);
     }}>Submit</button>
